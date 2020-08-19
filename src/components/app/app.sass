@@ -1,0 +1,138 @@
+*
+  box-sizing: border-box
+  outline: none
+body
+  background-color: #eeeeee
+  color: #011627
+  font-family: Noto Sans,Arial,Helvetica Neue,Helvetica,sans-serif
+.form_wrapper
+  background-color: #fff
+  max-width: 645px
+  margin: auto
+  padding: 20px 60px 60px 60px
+  line-height: 1.6
+  .row:last-child
+    margin-top: 60px
+  .row
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: flex-end
+    div
+      padding: 0 15px
+      width: auto
+  span
+    color: #011627
+    font-size: 15px
+    p
+      margin: 0
+  .error
+    border-color: red
+  .btn
+    display: inline-block
+    height: 50px
+    padding: 0 24px
+    float: right
+    background-color: #ff005b
+    border: 0
+    border-radius: 0
+    color: #fff
+    font-size: 15px
+    -webkit-transition: background-color .35s,border-color .35s,color .35s
+    transition: background-color .35s,border-color .35s,color .35s
+    cursor: pointer
+    &:hover
+      background-color: #80002d
+      -webkit-transition-duration: .175s
+      transition-duration: .175s
+  .img-loader
+    display: block
+    height: 30px
+    margin: 50% auto
+h1
+  text-align: center
+  margin-top: 0
+@media (max-width: 360px)
+  h1
+    font-size: 25px
+
+.channel_list
+  height: 300px
+  width: 230px !important
+  overflow-y: auto
+  padding: 0 !important
+  border: 1px solid #d6e0e7
+  &::-webkit-scrollbar-track
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+    background-color: #F5F5F5
+  &::-webkit-scrollbar
+    width: 4px
+    background-color: #E1E1E1
+  &::-webkit-scrollbar-thumb
+    background-color: #8D8D8D
+    border: 0 solid #8D8D8D
+  a
+    display: flex
+    align-items: center
+    background-color: #fff
+    text-decoration: none
+    color: inherit
+    cursor: pointer
+    width: 100%
+    padding: 5px 15px
+    transition: .3s
+    &:hover
+      background-color: rgba(0, 0, 0, 0.05)
+      transition: .3s
+  img
+    width: 20px
+    margin-right: 15px
+.program_list
+  height: 300px
+  width: 230px !important
+  overflow-y: auto
+  padding: 5px 0 !important
+  border: 1px solid #d6e0e7
+  user-select: none
+  &::-webkit-scrollbar-track
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+    background-color: #F5F5F5
+  &::-webkit-scrollbar
+    width: 4px
+    background-color: #E1E1E1
+  &::-webkit-scrollbar-thumb
+    background-color: #8D8D8D
+    border: 0 solid #8D8D8D
+  & div
+    display: flex
+    align-items: baseline
+    background-color: #fff
+    text-decoration: none
+    color: inherit
+    cursor: pointer
+    width: 100%
+    padding: 10px 15px !important
+    transition: .3s
+    &.active
+      background-color: #FFC7C9
+    &.next
+      background-color: #C7E6FF
+    span
+      margin-right: 15px
+      line-height: 1
+    p
+      margin: 0
+      font-size: 12px
+      line-height: 1
+.checked_channel
+  display: flex
+  font-weight: bold
+  margin-bottom: 15px
+  margin-top: 30px
+  img
+    width: 20px
+    height: 100%
+    margin-right: 15px
+  p
+    margin: 0
+
